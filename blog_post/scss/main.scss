@@ -1,0 +1,89 @@
+//CSS Reset demo
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; //<-- Research 
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: Helvetica Neue, Arial; //Arial is a fallback font-family 
+  font-size: 18px;
+}
+
+h1,
+h2{
+  color: #00960b;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.main-text {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+//ID's is not a good practice, single use
+.author-text {
+  font-size: 22px;
+  float: left;
+  margin: 30px 0  0 10px;
+}
+
+.container {
+  width: 1140px;
+  margin: 20px auto 0 auto; //Centers content
+}
+
+.blog-post {
+  width: 75%;
+  float: left;
+  padding-right: 30px;
+  position: relative;
+}
+
+.other-posts {
+  width: 25%;
+  float: left;
+}
+
+.author-box {
+  border-top: 1px solid #808080;
+  padding-top: 20px;
+}
+
+.other {
+  margin-bottom: 40px;
+}
+
+.author-box img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+}
+
+.blog-post img {
+  height: 150px;
+  width: auto;
+}
+
+.date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 30px 0 0;  //Absolute position, parent must be relative.  
+}
